@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def create_dummy_df():
-    df = pd.DataFrame({'A': [1, 2, 3], 'B': [2, 4, 6]})
+    df = pd.DataFrame({'A': [1, 2, 3], 'B': [3, 6, 9]})
     print(df)
     return df
 
