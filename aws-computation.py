@@ -1,7 +1,9 @@
 import pandas as pd
+import redis
 
 
 def create_dummy_df():
+    print("Redis imported")
     df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 8, 12]})
     print(df)
     return df
