@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /traclytics_master
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/install_pydependencies
       timeout: 300
       runas: root
