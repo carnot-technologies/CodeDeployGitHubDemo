@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /traclytics_master
+    destination: /home/ec2-user/traclytics_master
 hooks:
   AfterInstall:
     - location: scripts/install_pydependencies
