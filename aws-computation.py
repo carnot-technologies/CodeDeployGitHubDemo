@@ -4,7 +4,7 @@ import redis
 
 def create_dummy_df():
     print("Redis imported")
-    df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 8, 12]})
+    df = pd.DataFrame({'A': [1, 2, 3], 'B': [5, 10, 15]})
     print(df)
     return df
 

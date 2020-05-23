@@ -13,6 +13,12 @@ def update_metrics_cron():
     print(ft)
 
 
+@scheduler.scheduled_job('cron', second='*/1')
+def check_server_status():
+    print("Checking server status ...")
+    print("============ Server is up & running! ============")
+
+
 if __name__ == '__main__':
     procs = []
     try:
