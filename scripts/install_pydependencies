@@ -1,4 +1,4 @@
 #!/bin/bash
 source /home/ec2-user/tracMasterEnv/bin/activate
 source /home/ec2-user/final_config_env
-pip install -r requirements.txt
+pip install -r /home/ec2-user/traclytics_master/requirements.txt
