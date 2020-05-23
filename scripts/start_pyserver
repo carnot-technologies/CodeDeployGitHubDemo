@@ -1,4 +1,10 @@
 #!/bin/bash
+COMP_FILE=/lib/systemd/system/master-aws-computation.service
+SCHED_FILE=/lib/systemd/system/monitoring_scheduler.service
 sudo systemctl daemon-realod
-sudo systemctl start master-aws-computation.service
-sudo systemctl start monitoring_scheduler.service
+if [[ -f "$COMP_FILE" ]]; then
+	sudo systemctl start master-aws-computation.service
+fi
+if [[ -f "$SCHED_FILE" ]]; then
+	sudo systemctl start monitoring_scheduler.service
+fi
