@@ -6,7 +6,7 @@ import sys
 scheduler = BlockingScheduler()
 
 
-@scheduler.scheduled_job('cron', second='0')
+@scheduler.scheduled_job('cron', second='0,15,30,45')
 def update_metrics_cron():
     print("Updating server metrics: 60 second bucket")
     ft = datetime.datetime.utcnow()
