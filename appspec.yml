@@ -5,14 +5,14 @@ files:
     destination: /home/ec2-user/traclytics_master
 hooks:
   AfterInstall:
-    - location: scripts/install_pydependencies
+    - location: scripts/install_dependencies
       timeout: 300
       runas: root
-    - location: scripts/start_pyserver
+    - location: scripts/start_server
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_pyserver
+    - location: scripts/stop_server
       timeout: 300
       runas: root
 
