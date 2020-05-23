@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo systemctl daemon-realod
+sudo systemctl start master-aws-computation.service
