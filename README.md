@@ -27,4 +27,4 @@ For 4 & 5, AWS provides **CodeDeploy** where we can choose the environment (dev/
 
 All the automation configuration can be customized through AWS CodePipeline
 
-For more details on setup, checkout the wiki page.
+_For more details on setup, checkout the ![wiki](https://github.com/juhi04/CodeDeployGitHubDemo/wiki) page._
